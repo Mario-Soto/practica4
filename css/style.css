@@ -1,0 +1,187 @@
+@import url(bootstrap.css);
+@import url(all.css);
+
+@font-face {
+    font-family: Brutal;
+    src: url("fonts/brutal.eot");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Brutal;
+    src: url("fonts/brutal.woff2") format("woff2");
+    font-weight: 500;
+}
+
+
+*{
+    font-family: Brutal, sans-serif;
+}
+
+html{
+    font-size: 16px;
+    height: 100vh;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: 100vh;
+}
+
+.row{
+    --bs-gutter-x: 0;
+}
+
+.tarjeta{
+    background-color: #202020;
+    max-width: 470px;
+    padding: 50px 60px;
+}
+
+#logo{
+    width: 55px;
+    margin-bottom: 30px;
+}
+
+.mayus{
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1rem;
+    letter-spacing: 0.5px;
+}
+
+input:not(:-webkit-autofill){
+    background: transparent;
+    border-color: rgba(255, 255, 255, 0.40);
+    color: white;
+}
+
+.form-control:not(:-webkit-autofill):focus{
+    background: transparent;
+    color: inherit;
+    border-color: white;
+    box-shadow: none;
+}
+
+.form-floating > .form-control{
+    padding-left: calc(0.75rem + 8px);
+}
+
+label{
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    opacity: 0.65;
+    margin-left: 8px;
+}
+
+#rememberMe{
+    width: 24px;
+    height: 24px;
+}
+#rememberMe:hover{
+    box-shadow: 5px 5px 10px rgba(255,255,255,0.4);
+    box-shadow: 0px 0px 2px 6px rgba(255,255,255,0.3);
+}
+
+.ayuda{
+    display: block;
+    height: 20px;
+}
+
+.flexbox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.btn-s{
+    margin-top: 30px;
+    background-color: #0074E4;
+    padding: 5px 20px;
+    font-size: 0.75rem;
+    min-width: 40px;
+    min-height: 60px;
+}
+
+.mayus-2{
+    letter-spacing: 0.5px;
+}
+
+.btn-s:hover{
+    background-color: rgb(40, 138, 232);
+}
+
+.btn-s:focus .btn-s:active{
+    box-shadow: none;
+}
+
+.mt-5{
+    margin-top: 35px!important;
+}
+
+.text{
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    opacity: 0.65;
+}
+
+.link{
+    color: white;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.1px;
+}
+
+.link:hover{
+    color: white;
+}
+
+.text-error{
+    font-size: 0.75rem;
+    color: #de3341;
+}
+
+#password{
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#togglepas{
+    width: 50px;
+    justify-content: center;
+    padding: 6px;
+    background-color: transparent;
+    border-left: none;
+    border-color: rgba(255, 255, 255, 0.40);
+}
+
+#btnpass{
+    padding: 8px;
+    color: white;
+    cursor: pointer;
+}
+#btnpass:hover{
+    background-color: rgba(255,255,255,0.25);
+}
+
+#togglepas.borde-blanco{
+    border-color: white;
+}
+
+
+input.error, span.error{
+    border-color: #de3341!important;
+}
+
+@media (max-width: 470px) {
+    .tarjeta{
+        padding: 50px 15px;
+        height: 100%;
+        width: 100%;
+    }
+}
