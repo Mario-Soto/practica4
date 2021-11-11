@@ -4,6 +4,8 @@
 @font-face {
     font-family: Brutal;
     src: url("fonts/brutal.eot");
+    src: url("fonts/brutal.svg") format("svg");
+    src: url("fonts/brutal.woff") format("woff");
     font-weight: 400;
 }
 
